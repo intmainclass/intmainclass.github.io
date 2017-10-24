@@ -1,0 +1,41 @@
+.body{
+	background-color: RGB(243, 245, 247);
+}
+
+.main-text-question{
+	font-size: 30pt;
+	font-style: "Arvo";
+
+	text-align: center;
+
+	padding-top: 67px;
+	
+	color: RGB(59,63,106);	
+}
+
+.main-components{
+	text-align: center;
+	padding-top: 132px;
+}
+
+.main-components_text-level1{
+	font-size: 22pt;
+
+	font-style: "Arvo";
+
+	text-align: center;
+
+	padding-top: 40px;
+	color: RGB(59,63,106);
+}
+
+.main-components_text-level2{
+	font-size: 16pt;
+
+	font-style: "NotoSans";
+
+	text-align: center;
+
+	padding-top: 23px;
+	color: RGB(104,108,139);
+}
