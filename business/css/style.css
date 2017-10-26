@@ -2,7 +2,7 @@
 	background-color: RGB(243, 245, 247);
 }
 
-.main-text-question{
+.main__text-question{
 	font-size: 30pt;
 	font-style: "Arvo";
 
@@ -13,12 +13,12 @@
 	color: RGB(59,63,106);	
 }
 
-.main-components{
+.main__components{
 	text-align: center;
 	padding-top: 132px;
 }
 
-.main-components_text-level1{
+.main__components_text-level1{
 	font-size: 22pt;
 
 	font-style: "Arvo";
@@ -29,7 +29,7 @@
 	color: RGB(59,63,106);
 }
 
-.main-components_text-level2{
+.main__components_text-level2{
 	font-size: 16pt;
 
 	font-style: "NotoSans";
