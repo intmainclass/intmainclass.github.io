@@ -1,0 +1,160 @@
+.top-menu__logo-portlend{
+	padding-top: 31px;
+	padding-bottom: 34px;
+}
+
+.top-menu__category{
+
+	display: flex;	
+}
+
+.top-menu__category_link{
+	padding-top: 33px;
+	padding-left: 33px;
+
+	font-style: "Montserrat Regular";
+	font-size: 11pt;
+}
+
+.top-menu__shop{
+
+	display: flex;
+}
+
+.top-menu__shop_cart-logo{
+	padding-left: 45px;
+	padding-top: 20px;
+}
+
+.top-menu__shop_cart-text{
+	font-style: "Montserrat";
+	font-size: 9pt;
+
+	padding-top: 32px;
+	padding-left: 4px;
+}
+
+.top-menu__shop_badge{
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.top-menu__shop_badge-count{
+	position: absolute;
+
+	padding-top: 29px;
+	padding-left: 117px;
+}
+
+.top-menu__button{
+
+	display: flex;
+}
+
+.top-menu__button_logo{
+	padding-top: 22px;
+	padding-left: 2px;
+}
+
+.top-menu__button_text{
+	position: absolute;
+
+	padding-top: 32px;
+	padding-left:25px;
+
+	font-size: 11px;
+
+	color: RGB(227, 232, 240);
+}
+
+.menu-line{
+	height: 1px;
+
+	background-color: RGB(227, 232, 240);
+}
+
+.menu__category{
+
+	display: flex;
+}
+
+.menu__category_first{
+	padding-top: 23px;
+	padding-left: 0px;
+	padding-bottom: 23px;
+
+	color: RGB(227, 232, 240);
+	font-style: "Montserrat Regular";
+	font-size: 11pt;
+}
+
+.menu__category_second{
+	padding-top: 23px;
+	padding-left: 30px;
+	padding-bottom: 23px;
+
+	color: RGB(227, 232, 240);
+	font-style: "Montserrat Regular";
+	font-size: 11pt;
+}
+
+.menu__category_selected{
+	padding-top: 23px;
+	padding-left: 30px;
+	padding-bottom: 23px;
+
+	font-style: "Montserrat Regular";
+	font-size: 11pt;
+}
+
+
+.menu__support_text{
+	padding-bottom: 23px;
+	padding-left: 85px;
+	padding-top: 23px;
+
+	color: RGB(227, 232, 240);
+}
+
+.menu__search{
+
+	display: flex;
+}
+
+.menu__search_logo{
+
+	padding-top: 12px;
+}
+
+.menu__search_text{
+	padding-left: 10px;
+	padding-top: 20px;
+
+	color: RGB(227, 232, 240);
+}
+
+.menu-iphone{
+	height: 500px;
+	background-image: url(../img/iphone_6_space_gray.jpg);
+}
+
+.menu-iphone__text_main{
+	padding-left: 190px;
+	padding-top: 110px;
+}
+
+.menu-iphone__text_about{
+	padding-left: 190px;
+	padding-top: 36px;
+	
+	font-size: 11pt;
+	font-style: "CrimsonText Roman";
+
+	color: RGB(227, 232, 240);
+}
+
+.menu-iphone__button_link{
+	padding-top: 50px;
+	padding-left: 190px;
+}
+
