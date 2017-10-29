@@ -1,0 +1,33 @@
+
+.text-box{
+	padding-top: 2rem;
+}
+.fonts__resault {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+
+.fonts__resault_opensas{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.fonts__resault_lobster{
+	font-family: 'Lobster', cursive;
+}
+
+.fonts__resault_lato{
+	font-family: 'Lato', sans-serif;
+}
+
+.fonts__resault_bebas{
+	font-family: 'Bebas', sans-serif;
+}
+
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
