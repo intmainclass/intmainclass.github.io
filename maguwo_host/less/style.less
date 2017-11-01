@@ -1,0 +1,169 @@
+html{
+	
+}
+
+/* font mixin */
+.reg{
+	font-family: 'Raleway', sans-serif;
+	font-weight:400px;
+}
+
+.semi{
+	font-family: 'Raleway', sans-serif;
+	font-weight:600px;
+}
+
+.bold{
+	font-family: 'Raleway', sans-serif;
+	font-weight:700px;
+}
+
+/*color mixin*/
+
+@color_blue: rgb(32, 34, 66);
+@color_yellow:rgb(255, 225, 62);
+@color_line: rgba(164, 164, 164, .1);
+@color_white: rgb(255, 255, 255);
+@color_white_a: rgba(255, 255, 255, .4);
+
+/*fonts style*/
+header{
+	background-image: url('../img/background.jpg');
+	height: 100vh;
+	min-height:600px;
+}
+
+.menu{
+	border-bottom: 1px solid @color_line;
+	background-color: #fff;
+	width: 1400px;
+	height: 147px;
+
+	&__logo{
+		line-height:130px;
+	}
+
+	&__navigation{
+
+		line-height:139px;
+		text-align: center;
+		li{
+			
+			a{
+				color: @color_blue;
+				font-size:16px;
+				text-decoration:none;
+				.reg;
+			}
+
+			&.item-active a{
+				color: @color_yellow;
+				.bold;
+			}
+
+			display:inline-block;
+			margin:0px 10px;
+
+		}
+	}
+
+	&__callback{
+		height:147px;
+		&_text{
+			p{
+				padding-top: 30px;
+				font-size: 12px;
+			}
+		}
+
+		&_button{
+			display: inline-block;
+			padding: 10px 25px;
+			background-color: @color_yellow;
+
+			.bold;
+			color: @color_blue;
+			margin-right: 20px;
+		}
+
+		&_telephone{
+			font-size: 24px;
+			border-left: 1px solid @color_line;
+			padding-left:20px;
+			color: @color_blue;
+
+		}
+
+		border-left: 1px solid @color_line;
+		text-align: center;
+	}
+
+	&-header{
+		text-align:center;
+		&__text{
+
+			padding-top: 64px;
+			h1{
+				.bold;
+				font-size:40px;
+				color: @color_white;
+			}
+
+			h2{
+				.reg;
+				font-size:30px;
+				color: @color_white;
+			}
+		}
+
+		&__logo{
+			padding-top: 30px;
+		}
+	}
+
+	&__form{
+			display: flex;
+			background-color:@color_white_a;
+			width:572px;
+			height:90px;
+
+			margin:60px auto;
+
+			text-align:center;
+
+			&_in{
+				width:274px;
+				margin:20px 0px 20px 20px;
+				text-align:center;
+			}
+
+			&_padding{
+				display:inline;
+				width:108px;
+				margin:20px 0px 20px 0px;
+				background-color: @color_yellow;
+
+				p{
+  					padding-top:15px;
+  				}
+			}
+
+			&_button{
+				width:154px;
+				margin:20px 0px 20px 0px;
+				background-color: @color_yellow;
+
+				border-left: 1px solid rgb(255,255,255);
+
+				button{
+					height:50px;
+					width:154px;
+					font-size: 14px;
+  					text-decoration: none;
+  					.bold;
+  					background-color: @color_yellow;
+  				}
+			}
+	}
+}
+
