@@ -14,7 +14,8 @@
 /*color mixin*/
 /*fonts style*/
 header {
-  background-image: url('../img/background.jpg') no-repeat;
+  background: url('../img/background.jpg') no-repeat center center;
+  background-size:cover;
   height: 100vh;
   min-height: 600px;
 }
