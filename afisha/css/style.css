@@ -1,0 +1,189 @@
+.bold_play {
+  font-family: 'Play', sans-serif;
+}
+.reg_open-sans {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.content__film-ticket {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  margin-top: 135px;
+  margin-left: 215px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  padding-top: 13px;
+}
+.content__film-ticket a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  width: 100vw;
+  height: 600px;
+  background-color: black;
+}
+header .content__posledniy_bogatir_wrap {
+  opacity: 0;
+  width: 560px;
+  height: 318px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+header .content__posledniy_bogatir_wrap:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .content__posledniy_bogatir {
+  width: 560px;
+  height: 319px;
+  background-size: cover;
+  background: url('../img/posledniy-bogatir.jpg') no-repeat center center;
+}
+header .main_film {
+  height: 235px;
+  width: auto;
+  background: url("../img/matilda_main.png") no-repeat center center;
+  background-color: cover;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 1px solid #fff;
+}
+.menu {
+  height: 50px;
+  width: auto;
+  border-top: 1px solid #fff;
+}
+.menu__logo {
+  background: black;
+}
+.menu__logo p {
+  padding-top: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Play', sans-serif;
+}
+.menu__logo span {
+  margin-left: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 20px;
+  width: 50px;
+  background-color: red;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.menu__category {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu__category p {
+  padding-top: 6px;
+  margin: 5px;
+  color: #fff;
+}
+.menu__category .li {
+  height: 50px;
+}
+.menu__category .li:hover {
+  background: #fff;
+}
+.menu__category .li:hover p {
+  color: black;
+}
+.navigation {
+  width: 100%;
+  background: red;
+  height: 58px;
+  display: block;
+  border-top: 1px solid #fff;
+}
+.navigation__content {
+  padding-top: 0px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navigation__content p {
+  padding-top: 10px;
+  margin: 5px;
+  color: #fff;
+}
+.navigation__content .li {
+  height: 59px;
+}
+.navigation__content .li:hover {
+  background: #fff;
+}
+.navigation__content .li:hover p {
+  color: black;
+}
+.content__warning {
+  font-style: italic;
+}
+.content {
+  width: auto;
+  height: 100vh;
+  background-color: #fff;
+}
+.content__film {
+  display: block;
+  width: 560px;
+  margin: 10px auto;
+}
+.content__film span {
+  font-size: 12px;
+}
+.content__film_text {
+  font-size: 25px;
+}
+.content__film .content__line {
+  display: block;
+  width: 560px;
+  height: 1px;
+  background-color: silver;
+  margin-top: 10px;
+}
+.content__film .content__recomed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 560px;
+}
+.content__film .content__recomed_film {
+  padding-top: 15px;
+  width: 186.7px;
+}
+.content__film .content__recomed_film img {
+  width: 177px;
+  height: 99px;
+}
+.content__film .content__recomed_film p {
+  font-size: 13px;
+}
+.content__film .content__recomed_film-center {
+  padding-top: 15px;
+  width: 186.7px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.content__film .content__recomed_film-center img {
+  width: 177px;
+  height: 99px;
+}
+.content__film .content__recomed_film-center p {
+  font-size: 13px;
+}
