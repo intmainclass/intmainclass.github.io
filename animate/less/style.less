@@ -1,0 +1,221 @@
+.html{
+	width: 100vw;
+	height: 100vh;
+}
+
+.contact{
+	width: 100vw;
+	height: 88px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	&__caption{
+		display: flex;
+		width: 30%;
+
+		&-text{
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__phone{
+		display: flex;
+		width: 30%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&-text{
+			display: block;
+		}
+
+		&-button{
+			display:block;
+			text-align: center;
+
+			border-radius: 10px;
+			border: 1px solid #282828;
+			color: black;
+
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+.main{
+	width: 100vw;
+	height: 1100px;
+	display: flex;
+	justify-content: space-around;
+
+	.title{
+		height: 1100px;
+		width: 90%;
+		background: url("../img/background.jpg") no-repeat center center;
+		background-size: cover;
+
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+
+
+		.title__content{
+			display: flex;
+			background-color: rgb(41,45,48);
+			height: 6%;
+
+			color: rgb(255,255,255);
+
+			align-items: center;
+			justify-content: center;
+
+			.ul{
+				width: 60%;
+				display: flex;
+
+				justify-content: space-around;
+
+				.li{
+					display: block;
+				}
+			}
+		}
+
+		.title__about{
+			height: 94%;
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.title__logo{
+				display:block;
+				margin-top: 110px;
+			}
+
+			.title__caption{
+				display: block;
+
+				font-family: Panton;
+				color:  #ffffff;
+				font-size: 40px;
+				font-weight: 900;
+				text-align: center;
+
+				margin-top: 20px;
+			}
+
+			.title__text{
+				display:block;
+
+				text-align: center;
+
+				font-family: Panton;
+				color:  #ffffff;
+				font-size: 24px;
+				font-weight: 600;
+			}
+
+			.title__link-to-but{
+				display:block;
+
+				font-family: Panton;
+				color:  #ffffff;
+				font-size: 24px;
+				font-weight: 600;
+				text-align: center;
+
+				margin-top: 40px;
+			}
+
+			.title__button{
+				display:block;
+				padding:5px;
+				background-color: rgb(5,159,253);
+				border-radius: 30px;
+
+				font-family: Panton;
+				color:  #ffffff;
+				font-size: 30px;
+				font-weight: 700;
+				text-align: left;
+			}
+
+			.title__link-selected{
+				display: block;
+
+				font-family: Panton;
+				color:  #ffffff;
+				font-size: 24px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.title__mouse{
+				display: block;
+
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.about{
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+
+	.about__task{
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		align-items:center;
+		width: 90%;
+
+		.about__caption{
+			text-align: center;
+			font-family: Panton;
+			color:  #363636;
+			font-size: 36px;
+			font-weight: 900;
+		}
+
+		.about__text{
+			margin-top:20px;
+			font-family: Panton;
+			color:  #000000;
+			font-size: 15px;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		.about__line{
+			align-items: center;
+		}
+
+		.about__content{
+			margin-top: 50px;
+			width:100%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+
+			.wow{
+				width:15%;
+
+				.content__text{
+					margin-top: 20px;
+					display:block;
+					font-family: Panton;
+					color:  #333333;
+					font-size: 15px;/* Приближение из-за подстановки шрифтов */
+					font-weight: 600;
+					text-align:center;
+				}
+			}
+		}
+	}
+}

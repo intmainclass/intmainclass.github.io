@@ -1,0 +1,240 @@
+.html {
+  width: 100vw;
+  height: 100vh;
+}
+.contact {
+  width: 100vw;
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.contact__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+.contact__caption-text {
+  display: block;
+  text-align: center;
+}
+.contact__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__phone-text {
+  display: block;
+}
+.contact__phone-button {
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #282828;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main {
+  width: 100vw;
+  height: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main .title {
+  height: 1100px;
+  width: 90%;
+  background: url("../img/background.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.main .title .title__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #292d30;
+  height: 6%;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .title .title__content .ul {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main .title .title__content .ul .li {
+  display: block;
+}
+.main .title .title__about {
+  height: 94%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .title .title__about .title__logo {
+  display: block;
+  margin-top: 110px;
+}
+.main .title .title__about .title__caption {
+  display: block;
+  font-family: Panton;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 20px;
+}
+.main .title .title__about .title__text {
+  display: block;
+  text-align: center;
+  font-family: Panton;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.main .title .title__about .title__link-to-but {
+  display: block;
+  font-family: Panton;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px;
+}
+.main .title .title__about .title__button {
+  display: block;
+  padding: 5px;
+  background-color: #059ffd;
+  border-radius: 30px;
+  font-family: Panton;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+.main .title .title__about .title__link-selected {
+  display: block;
+  font-family: Panton;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.main .title .title__about .title__mouse {
+  display: block;
+  margin-top: 10px;
+}
+.about {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.about .about__task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+.about .about__task .about__caption {
+  text-align: center;
+  font-family: Panton;
+  color: #363636;
+  font-size: 36px;
+  font-weight: 900;
+}
+.about .about__task .about__text {
+  margin-top: 20px;
+  font-family: Panton;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+.about .about__task .about__line {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .about__task .about__content {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.about .about__task .about__content .wow {
+  width: 15%;
+}
+.about .about__task .about__content .wow .content__text {
+  margin-top: 20px;
+  display: block;
+  font-family: Panton;
+  color: #333333;
+  font-size: 15px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  text-align: center;
+}
