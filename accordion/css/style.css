@@ -1,0 +1,58 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg.png") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+.main h1 {
+  padding-top: 80px;
+  font-family: Ubuntu;
+  color: #0bbaf0;
+  font-size: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+}
+/* 862 55*/
+.accordion {
+  text-align: center;
+  display: inline-block;
+}
+.accordion .tab {
+  width: 862px;
+  height: 55px;
+  line-height: 55px;
+  margin-top: 5px;
+  background-color: #0bbaf0;
+}
+.accordion .tab a {
+  width: 862px;
+  height: 55px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23.2px;
+  color: #ffffff;
+}
+.accordion .content {
+  position: relative;
+  top: -10px;
+  left: 6px;
+  width: 850px;
+  height: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 4px solid #dcdcdc;
+  border-top: 0px;
+  display: none;
+  background-color: #fff;
+}
+.accordion .content p {
+  display: block;
+  margin-top: 10px;
+  font-family: Ubuntu;
+  color: #535353;
+  font-size: 22px;
+  font-weight: 400;
+}

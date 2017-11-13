@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accord</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="main">
+    	<h1>Ответы на вопросы<br>которые нам чаще всего задают</h1>
+		<div class="accordion">
+			<div class="tab">
+				<a class="tab-link" href="#content-1">Сколько времени может занять быстрая уборка 1 комнатной квартиры?</a>
+			</div>
+			<div class="content" id="content-1">
+				<p>Быстрая уборка 1 комнатной квартиры, которая включает в себя мытье<br>полов, протирку пыли и зеркал занимает около 1 часа. Но, конечно,<br>многое зависит от степени загрязненности и заставленности комнат.</p>
+			</div>
+			<div class="tab">
+				<a class="tab-link" href="#content-2">Сколько времени может занять быстрая уборка 2-х комнатной квартиры?</a>
+			</div>
+			<div class="content" id="content-2">
+				<p>Быстрая уборка 2-х комнатной квартиры, которая включает в себя мытье<br>полов, протирку пыли и зеркал занимает около 2 часов. Но, конечно,<br>многое зависит от степени загрязненности и заставленности комнат.</p>
+			</div>
+			<div class="tab">
+				<a class="tab-link" href="#content-3">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a>
+			</div>
+			<div class="content" id="content-3">
+				<p>Быстрая уборка 3-x комнатной квартиры, которая включает в себя мытье<br>полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно,<br>многое зависит от степени загрязненности и заставленности комнат.</p>
+			</div>
+			<div class="tab">
+				<a class="tab-link" href="#content-4">Сколько времени может занять быстрая уборка 4-х комнатной квартиры?</a>
+			</div>
+			<div class="content" id="content-4">
+				<p>Быстрая уборка 4 комнатной квартиры, которая включает в себя мытье<br>полов, протирку пыли и зеркал занимает около 4 часа. Но, конечно,<br>многое зависит от степени загрязненности и заставленности комнат.</p>
+			</div>
+		</div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			var tab = $(".tab-link");
+
+			tab.click(function(){
+				var tab_link = $(this).attr('href');
+				$(".content").hide();
+      			$(tab_link).show();
+			});
+		});
+	</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
