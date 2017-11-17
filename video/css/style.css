@@ -1,8 +1,8 @@
 html {
-  overflow-x: none;
+  overflow-x: hidden;
 }
 body{
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 .list-1 {
