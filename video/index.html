@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>video-bg</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+	<div class="navigation">
+		<div class="row">
+			<div class="col-lg-1 navigation__logo"><img src="img/logo-nav.png" alt=""></div>
+			<div class="col-lg-6 navigation__content">
+				<ul>
+					<li>SERVICE</li>
+					<li>ABOUT</li>
+					<li>PORTFOLIO</li>
+					<li>TEAM</li>
+					<li>PRICING</li>
+					<li>TESTIMONIAL</li>
+				</ul>
+			</div>
+			<div class="col-lg-offset-3 col-lg-2 navigation__link">
+				<img src="img/soc.png" alt="">
+			</div>
+		</div>
+	</div>
+
+    
+    <!-- Первая страница сайта -->
+    <div class="list-1">
+
+		<!-- Video bacground (Start code) -->
+    	<div class="video-container">
+	        <div class="filter"></div>
+	        <video autoplay loop class="fillWidth">
+	            <source src="video-bg/Ultra_Sunset.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	            <source src="video-bg/Ultra_Sunset.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	        </video>
+	        <div class="poster hidden">
+	            <img src="video-bg/Ultra_Sunset.jpg" alt="">
+	        </div>
+    	</div>
+		<!-- (End Code) http://coverr.co -->
+
+    	<div class="main">
+
+    		<!-- Заголовки различных уровней -->
+    		<div class="caption">
+    			<p class="caption__level-1">CONTENT DESCRIPTION</p>
+    			<p class="caption__level-2">See the world through our product</p>
+    			<p class="caption__level-3">Get The Most Converstion Rate Easily.</p>
+    		</div>
+
+    		<div class="play-video">
+    			<img src="img/video icon.png" alt="video-icon">
+    		</div>
+			
+			<!-- Типо форма с вводом контактных данных -->
+    		<div class="form">
+    			<div class="form__input"><p>Your Name</p></div>
+    			<div class="form__input line"><p>Email Address</p></div>
+    			<div class="form__button"><p>Subscribe »</p></div>
+    		</div>
+
+    		<div class="text">
+    			<p class="text__about">* We don’t share your personal<br>info with anyone Check out our <span>Policy</span> & for more information <span>Contact Us</span>.</p>
+    		</div>
+    	</div>
+    </div>
+    <!-- Конец list-1 -->
+	
+	<!-- Вторая страница -->
+    <div class="list-2">
+    	<div class="caption-l-2">
+    		<div class="caption-l-2__logo"><img src="img/logo.png" alt="logo"></div>
+    		<div class="caption-l-2__caption"><p>Product Features</p></div>
+			<div class="caption-l-2__text"><p>What we <span>do</span></p></div>
+    	</div>
+
+    	<div class="container content">
+    		<div class="row">
+    			<div class="col-lg-4">
+    				<img src="img/phone.png" alt="">
+    				<h1>Fully Responsive</h1>
+    				<h2>Lorem ipsum dolor sit amet, consectetur<br> 
+adipisicing elit, sed do eiusmod tempor incididunt<br>
+ut labore et dolore.</h2>
+    			</div>
+    			<div class="col-lg-4">
+    				<img src="img/custumize.png" alt="">
+    				<h1>Easy to Customize</h1>
+    				<h2>Lorem ipsum dolor sit amet, consectetur<br> 
+adipisicing elit, sed do eiusmod tempor incididunt<br>
+ut labore et dolore.</h2></h2>
+    			</div>
+    			<div class="col-lg-4">
+    				<img src="img/lamp.png" alt="">
+    				<h1>Direct Support</h1>
+    				<h2>Lorem ipsum dolor sit amet, consectetur<br> 
+adipisicing elit, sed do eiusmod tempor incididunt<br>
+ut labore et dolore.</h2></h2>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script>
+		//jQuery is required to run this code
+		$( document ).ready(function() {
+
+		    scaleVideoContainer();
+
+		    initBannerVideoSize('.video-container .poster img');
+		    initBannerVideoSize('.video-container .filter');
+		    initBannerVideoSize('.video-container video');
+
+		    $(window).on('resize', function() {
+		        scaleVideoContainer();
+		        scaleBannerVideoSize('.video-container .poster img');
+		        scaleBannerVideoSize('.video-container .filter');
+		        scaleBannerVideoSize('.video-container video');
+		    });
+
+		});
+
+		function scaleVideoContainer() {
+
+		    var height = $(window).height() + 5;
+		    var unitHeight = parseInt(height) + 'px';
+		    $('.homepage-hero-module').css('height',unitHeight);
+
+		}
+
+		function initBannerVideoSize(element){
+
+		    $(element).each(function(){
+		        $(this).data('height', $(this).height());
+		        $(this).data('width', $(this).width());
+		    });
+
+		    scaleBannerVideoSize(element);
+
+		}
+
+		function scaleBannerVideoSize(element){
+
+		    var windowWidth = $(window).width(),
+		    windowHeight = $(window).height() + 5,
+		    videoWidth,
+		    videoHeight;
+
+		    // console.log(windowHeight);
+
+		    $(element).each(function(){
+		        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+		        $(this).width(windowWidth);
+
+		        if(windowWidth < 1000){
+		            videoHeight = windowHeight;
+		            videoWidth = videoHeight / videoAspectRatio;
+		            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+		            $(this).width(videoWidth).height(videoHeight);
+		        }
+
+		        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+		    });
+		}   	
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

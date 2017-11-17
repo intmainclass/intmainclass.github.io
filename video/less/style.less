@@ -1,0 +1,267 @@
+body, html{
+	overflow-x: none;
+}
+
+.list-1{
+	z-index: 2;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* 
+   +-----------------------+
+   |	Video background   |
+   +-----------------------+
+*/
+/*-------------------------*/
+.video-container {
+	z-index: 1;
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+/*--------------------------*/
+
+.main{
+	position: absolute;
+	z-index:2;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+/* -------- main block -----------*/
+.caption{
+	margin-top: 8%;
+	text-align: center;
+
+	&__level-1{
+		font-family: Ubuntu;
+		color:  #ffffff;
+		font-size: 17px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 67px;/* Приближение из-за подстановки шрифтов */
+	}
+
+	&__level-2{
+		font-family: Ubuntu;
+		color:  #ffffff;
+		font-size: 56px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 67px;/* Приближение из-за подстановки шрифтов */
+	}
+
+	&__level-3{
+		font-family: Ubuntu;
+		color:  #ffffff;
+		font-size: 24px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		line-height: 67px;/* Приближение из-за подстановки шрифтов */
+	}
+}
+
+.play-video{
+	text-align: center;
+	margin-top: 3%;
+}
+
+.form{
+	margin-top: 3%;
+	text-align:center;
+
+	.line{
+		margin-left:-4px;
+		border-left: 2px solid rgba(0, 0, 0, 0.5);
+	}
+
+	&__input{
+		display:inline-block;
+		width: 220px;
+		height: 50px;
+		background-color: #fff;
+
+		line-height: 50px;
+
+		p{
+			display: inline-block;
+
+			font-family: Ubuntu;
+			color: #929292;
+			font-size: 18px; /* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 30px; /* Приближение из-за подстановки шрифтов */
+		}
+	}
+
+	&__button{
+		margin-left: -4px;
+		display:inline-block;
+		background-color:  #1abc9c;
+		width: 160px;
+		height: 50px;
+
+		line-height: 50px;
+
+		p{
+			display: inline-block;
+
+			font-family: Ubuntu;
+			color: #ffffff;
+			font-size: 18px; /* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+			line-height: 30px; /* Приближение из-за подстановки шрифтов */
+		}
+	}
+}
+
+.text{
+	text-align:center;
+	margin-top: 3%;
+
+	font-family: Ubuntu;
+	color:  #ffffff;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 27px;/* Приближение из-за подстановки шрифтов */
+
+	span{
+		font-family: Ubuntu;
+		color:  #19bc9b;
+		font-size: 18px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		line-height: 27px;/* Приближение из-за подстановки шрифтов */
+	}
+}
+
+/* ---------- конец стилей list-1 --------------*/
+
+.navigation{
+	z-index: 3;
+	position: fixed;
+	background-color:  #ffffff;
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.19);
+	width: 100vw;
+	height: 61px;
+
+	line-height:61px;
+
+	&__logo{
+		text-align: center;
+		display: inline-block;
+	}
+
+	&__content{
+
+		ul{
+			display:inline-block;
+		}
+
+		li{
+			
+			display: inline-block;
+			font-family: Ubuntu;
+			color:  #a69999;
+			font-size: 15px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 67px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			padding-left: 8px;
+		}
+	}
+}
+
+.list-2{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-color: #fff;
+	z-index: 2;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid black;
+	overflow-y: none;
+}
+
+.caption-l-2{
+	text-align: center;
+
+	&__logo{
+		display:block;
+		position: relative;
+		margin-top: 8%;
+	}
+
+	&__caption{
+		p{
+			font-family: Ubuntu;
+			color:  #a5a5a5;
+			font-size: 15px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 700;
+			line-height: 67px;/* Приближение из-за подстановки шрифтов */
+		}
+	}
+
+	&__text{
+		p{
+			font-family: Ubuntu;
+			color:  #4c4c4c;
+			font-size: 61px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+			line-height: 67px;/* Приближение из-за подстановки шрифтов */
+			
+			span{
+				font-family: Ubuntu;
+				color:  #1abc9c;
+				font-size: 61px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 300;
+				line-height: 67px;/* Приближение из-за подстановки шрифтов */
+			}
+		}
+	}
+}
+
+.content{
+	text-align: center;
+	margin-top: 5%;
+
+	h1{
+		font-family: Ubuntu;
+		color:  #4c4c4c;
+		font-size: 27px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 67px;/* Приближение из-за подстановки шрифтов */
+	}
+
+	h2{
+		font-family: Ubuntu;
+		color: #939598;
+		font-size: 16px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 27px; /* Приближение из-за подстановки шрифтов */
+	}
+}
+
