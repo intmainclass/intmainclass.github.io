@@ -1,0 +1,334 @@
+/*
+	Fonts
+*/
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+@font-face {
+    font-family: 'P22UndergroundCYPro';
+    src: url('../fonts/P22UndergroundCYPro-Book.eot');
+    src: url('../fonts/P22UndergroundCYPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/P22UndergroundCYPro-Book.woff2') format('woff2'),
+        url('../fonts/P22UndergroundCYPro-Book.woff') format('woff'),
+        url('../fonts/P22UndergroundCYPro-Book.ttf') format('truetype'),
+        url('../fonts/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'P22UndergroundCYPro';
+    src: url('../fonts/P22UndergroundCYPro-Heavy.eot');
+    src: url('../fonts/P22UndergroundCYPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/P22UndergroundCYPro-Heavy.woff2') format('woff2'),
+        url('../fonts/P22UndergroundCYPro-Heavy.woff') format('woff'),
+        url('../fonts/P22UndergroundCYPro-Heavy.ttf') format('truetype'),
+        url('../fonts/P22UndergroundCYPro-Heavy.svg#P22UndergroundCYPro-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'P22UndergroundCYPro';
+    src: url('../fonts/P22UndergroundCYPro-Thin.eot');
+    src: url('../fonts/P22UndergroundCYPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/P22UndergroundCYPro-Thin.woff2') format('woff2'),
+        url('../fonts/P22UndergroundCYPro-Thin.woff') format('woff'),
+        url('../fonts/P22UndergroundCYPro-Thin.ttf') format('truetype'),
+        url('../fonts/P22UndergroundCYPro-Thin.svg#P22UndergroundCYPro-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+	font-family: 'P22UndergroundCYPro';
+	overflow-x: none;
+}
+
+html{
+	font-size: 10px;
+	overflow-x: none;
+}
+
+.main{
+	width:100vw;
+	height: 75rem;
+	background: url("../img/background-menu.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.logo{
+	margin-top: 5rem;
+	
+	&__caption{
+		display: inline-block;
+		color:rgb(255,255,255);
+		vertical-align: top;
+		margin-left: 0.5rem;
+
+		font-size: 18px;
+		font-weight: 800;
+		line-height: 16px;
+		text-align: left;
+
+		span{
+			display: inline-block;
+			font-size: 10px;
+			color:rgb(255,255,255);
+
+			font-size: 12px;
+			font-weight: 100;
+			line-height: 16px;
+			text-align: left;
+		}
+	}
+}
+
+.contact{
+	&__button{
+		display:inline-block;
+		line-height: 5rem;
+
+		width:16.5rem;
+		height:5rem;
+
+		text-align: center;
+
+		border-radius: 0.1rem;
+		border: 0.1rem solid rgb(255,255,255);
+
+		margin-top: 5rem;
+
+		.contact__text{
+			display:inline-block;
+			height:1.7rem;
+			font-size: 1.5rem;
+			color: rgb(255,255,255);
+			font-weight: 100;
+			text-align: center;
+		}
+	}
+}
+
+.phone{
+	line-height: 5rem;
+	height:5rem;
+	margin-top: 5rem;
+
+	.phone__number{
+		display:inline-block;
+		color: rgb(255,255,255);
+		font-size: 25px;
+		font-weight: 800;
+	}
+}
+
+.caption{
+	margin-top: 55px;
+	text-align:center;
+	&__text{
+		color:  #ffff33;
+		font-size: 37px;
+		font-weight: 800;
+		line-height: 45px;
+	}
+
+}
+
+.application{
+	&__about{
+		display:block;
+		margin-top: 22rem;
+		color:  #ffffff;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 35px;
+		text-align: left;
+	}
+
+	&__form{
+		margin-left:5rem;
+		margin-top:1.5rem;
+		width: 42rem;
+		height: 41.3rem;
+		background-color: #ffff;
+		border-radius:5px;
+	}
+
+	&__caption{
+		display: block;
+		padding-top: 5rem;
+		color:  #333333;
+		font-size: 25px;
+		font-weight: 500;
+		line-height: 25px;
+		text-align: center;
+	}
+
+	&__phone{
+		border:1px solid rgb(153, 153, 153);
+		width: 32rem;
+		height:6rem;
+		margin-left: 5rem;
+		margin-top: 1.2rem;
+		border-radius:5px;
+	}
+
+	&__user{
+		border:1px solid rgb(153, 153, 153);
+		margin-top: 5rem;
+		width: 32rem;
+		height:6rem;
+		margin-left: 5rem;
+		border-radius:5px;
+	}
+
+	&__logo{
+		border-radius:5px;
+		width:6rem;
+		height: 6rem;
+		line-height:6rem;
+		text-align:center;
+		background-color: rgb(51, 51, 51);
+	}
+
+	&__logo-user{
+		display: inline-block;
+	}
+
+	&__button{
+		width: 32rem;
+		height:6rem;
+		margin-left: 5rem;
+		margin-top: 1.2rem;
+
+		border-radius:5px;
+
+		background-color: #ffff33; 
+	}
+
+	.button__text{
+		color:  #333333;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 45px;
+		text-align: center;
+	}
+}
+
+.lave-logo{
+	position: relative;
+	text-align: center;
+	&__img{
+		margin-top: -40px;
+	}
+}
+
+.conditions{
+	margin-top: 6rem;
+	text-align:center;
+
+	&__text{
+		padding-top:2rem;
+		color:  #333333;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.main{
+		height: 70rem;
+	}
+
+	.conditions{
+		margin-top:3rem;
+		&__text{
+			padding-top:0.5rem;
+			font-size:12px;
+		}
+	}
+
+	.lave-logo__img{
+		margin-top: -1rem;
+		width: 15.7rem;
+		height: 9.8rem;
+	}
+	.logo{
+		text-align:center;
+	}
+
+	.application{
+		text-align:center;
+	}
+
+	.contact{
+		text-align: center;
+		margin-top: -15px;
+	}
+
+	.phone{
+		text-align:center;
+		margin-top:0rem;
+	}
+
+	.application__form{
+		display: inline-block;
+		margin-top: 2rem;
+		width:24rem;
+		height:23.1rem;
+	}
+
+	.application__about{
+		margin-top: 15px;
+		font-size:15px;
+		line-height: 15px;
+
+	}
+
+	.application__logo{
+		width:4rem;
+		height:4rem;
+		line-height:4rem;
+	}
+
+	.application__caption{
+		font-size: 14px;
+		padding-top: 8px;
+
+		line-height:14px;
+	}
+
+	.application__user{
+		width:21rem;
+		height:4rem;
+		margin-left: 10px;
+		margin-top: 25px;
+	}
+	
+	.application__phone{
+		width:21rem;
+		height:4rem;
+		margin-left: 10px;
+		margin-top: 7px;
+	}
+
+	.application__button{
+		width:21rem;
+		height:4rem;
+		margin-left: 10px;
+		margin-top: 7px;
+	}
+
+	.caption{
+		text-align: center;
+		margin-top:10px;
+		&__text{
+			display:inline-block;
+			width: 320px;
+			font-size: 20px;	
+			line-height: 20px;
+		}
+	}
+}
