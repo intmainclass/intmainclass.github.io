@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>price</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="main">
+    	<div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1">
+                    <div class="main__logo"><img class="main__logo_font" src="img/mebel.png" alt=""></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="description">
+                        <div class="description__caption">
+                            <p class="description__caption_font">
+                                Стул “Венеция”
+                            </p>
+                        </div>
+                        <div class="description__caption-level-2">
+                            <p class="description__caption-level-2_font">
+                                Ограниченный выпуск.
+                            </p>
+                        </div>
+                        <div class="description__price">
+                            <p class="description__price_font">
+                                4250 р.
+                            </p>
+                        </div>
+                        <div class="description__about">
+                            <p class="description__about_font">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                            </p>
+                        </div>
+
+                        <!--<a href="index.html" class="description__button">Добавить в корзину</a> -->
+                        <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">    
+                            <input type="hidden" name="receiver" value="410014577264997">    
+                            <input type="hidden" name="formcomment" value="Мебель">    
+                            <input type="hidden" name="short-dest" value="Мебель">    
+                            <input type="hidden" name="label" value="$order_id">    
+                            <input type="hidden" name="quickpay-form" value="shop">    
+                            <input type="hidden" name="targets" value="Мебель">   
+                            <input type="hidden" name="sum" value="2500" data-type="number">    
+                            <input type="hidden" name="comment" value="Хотелось бы получить дистанционное управление.">     
+                            <input type="hidden" name="paymentType" value="AC">  
+                            <input class="button_money" type="submit" value="Купить">
+                        </form>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
