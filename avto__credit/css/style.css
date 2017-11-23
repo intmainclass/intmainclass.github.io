@@ -118,7 +118,7 @@ html {
 .application__caption {
   display: block;
   padding-top: 5rem;
-  color: black;
+  color: red;
   font-size: 28px;
   font-weight: 700;
   line-height: 25px;
@@ -232,7 +232,7 @@ html {
     line-height: 4rem;
   }
   .application__caption {
-    font-size: 17px;
+    font-size: 20px;
     padding-top: 8px;
     line-height: 14px;
   }
