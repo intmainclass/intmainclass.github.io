@@ -29,7 +29,7 @@ body {
 }
 html {
   font-size: 10px;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 .main {
   width: 100vw;
@@ -118,7 +118,7 @@ html {
 .application__caption {
   display: block;
   padding-top: 5rem;
-  color: #333333;
+  color: black;
   font-size: 25px;
   font-weight: 500;
   line-height: 25px;
