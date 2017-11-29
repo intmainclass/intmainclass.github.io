@@ -1,146 +1,133 @@
-/*
-	Fonts
-*/
-@font-face {
-  font-family: 'P22UndergroundCYPro';
-  src: url('../fonts/P22UndergroundCYPro-Book.eot');
-  src: url('../fonts/P22UndergroundCYPro-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/P22UndergroundCYPro-Book.woff2') format('woff2'), url('../fonts/P22UndergroundCYPro-Book.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Book.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book') format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'P22UndergroundCYPro';
-  src: url('../fonts/P22UndergroundCYPro-Heavy.eot');
-  src: url('../fonts/P22UndergroundCYPro-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/P22UndergroundCYPro-Heavy.woff2') format('woff2'), url('../fonts/P22UndergroundCYPro-Heavy.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Heavy.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Heavy.svg#P22UndergroundCYPro-Heavy') format('svg');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'P22UndergroundCYPro';
-  src: url('../fonts/P22UndergroundCYPro-Thin.eot');
-  src: url('../fonts/P22UndergroundCYPro-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/P22UndergroundCYPro-Thin.woff2') format('woff2'), url('../fonts/P22UndergroundCYPro-Thin.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Thin.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Thin.svg#P22UndergroundCYPro-Thin') format('svg');
-  font-weight: 100;
-  font-style: normal;
-}
-body {
-  font-family: 'P22UndergroundCYPro';
-}
+body,
 html {
-  font-size: 10px;
+  background-color: #fff;
+  overflow-x: hidden;
 }
-.main {
-  width: 100vw;
-  height: 75rem;
-  background: url("../img/background-menu.jpg") no-repeat center center;
+.container {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.main .content {
+  text-align: right;
+}
+.main .content__container {
+  margin-top: 30px;
+  width: 100%;
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.03);
+  text-align: left;
+}
+.main .content__container_caption {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 35px;
+  font-size: 25px;
+  font-weight: 700px;
+  color: red;
+}
+.main .content__container_text {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400px;
+  margin-left: 50px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.main .content__container_img {
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  height: 400px;
+  background: url("../img/east_go_i8.jpg") no-repeat center center;
   background-size: cover;
 }
-.logo {
-  margin-top: 5rem;
-}
-.logo__caption {
+.main .content__container .buy_btn {
   display: inline-block;
-  color: #ffffff;
-  vertical-align: top;
-  margin-left: 0.5rem;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 16px;
+  position: relative;
+  margin-left: 20px;
+  border-radius: 0px;
+  border: none;
+  background-color: #556B2F;
+}
+.main .content__container:hover {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(91, 162, 169, 0.2);
+          box-shadow: 0px 0px 16px 0px rgba(91, 162, 169, 0.2);
+}
+.contact {
+  height: 450px;
+  background-color: grey;
+  margin-top: 5%;
   text-align: left;
 }
-.logo__caption span {
-  display: inline-block;
-  font-size: 10px;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 100;
-  line-height: 16px;
-  text-align: left;
+.contact__text {
+  margin-top: 35px;
+  margin-left: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #fff;
 }
-.contact__button {
+.contact .map {
   display: inline-block;
-  line-height: 5rem;
-  width: 16.5rem;
-  height: 5rem;
-  text-align: center;
-  border-radius: 0.1rem;
-  border: 0.1rem solid #ffffff;
-  margin-top: 5rem;
+  margin-top: 5px;
 }
-.contact__button .contact__text {
+.panel-nav {
+  height: 130px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.panel-nav__logo {
+  display: block;
+  margin-top: 15px;
+  width: 150px;
+  height: 100px;
+}
+.fade .img-content {
   display: inline-block;
-  height: 1.7rem;
-  font-size: 1.5rem;
-  color: #ffffff;
-  font-weight: 100;
-  text-align: center;
 }
-.phone {
-  line-height: 5rem;
-  height: 5rem;
-  margin-top: 5rem;
+.fade .img-content__font {
+  margin-left: 20px;
+  height: 400px;
+  width: 380px;
 }
-.phone .phone__number {
+.fade .content {
   display: inline-block;
-  color: #ffffff;
+}
+.fade .content__text {
+  position: absolute;
+  top: 5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700px;
   font-size: 25px;
-  font-weight: 800;
 }
-.caption {
-  margin-top: 55px;
-  text-align: center;
+.fade .content__text .model {
+  color: red;
 }
-.caption__text {
-  color: #ffff33;
-  font-size: 37px;
-  font-weight: 800;
-  line-height: 45px;
-}
-.zayavka__about {
+.fade .content__text .haracteristicks {
   display: block;
-  margin-top: 22rem;
-  color: #ffffff;
   font-size: 20px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 300;
-  line-height: 35px;
-  /* Приближение из-за подстановки шрифтов */
-  text-align: left;
 }
-.zayavka__form {
+.fade .content__text .haracteristicks__about {
+  font-size: 15px;
+}
+.fade .popup-link {
   display: block;
-  margin-top: 3.5rem;
-  width: 420px;
-  height: 413px;
-  background-color: #ffff;
   text-align: center;
+  margin-top: 30px;
 }
-.zayavka__form .form__caption {
-  color: #333333;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 25px;
-  margin-top: ;
+.fade .popup-link .img {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
 }
-@media screen and (max-width: 700px) {
-  .logo {
-    text-align: center;
-  }
-  .contact {
-    text-align: center;
-    margin-top: -15px;
-  }
-  .phone {
-    text-align: center;
-    margin-top: 0rem;
-  }
-  .caption {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .caption__text {
-    display: inline-block;
-    width: 320px;
-    font-size: 20px;
-    line-height: 20px;
-  }
+.fade .popup-link .img-hidden {
+  display: none;
 }

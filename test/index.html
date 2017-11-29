@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Автозайм</title>
+    <title>Project</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,42 +20,164 @@
     <![endif]-->
   </head>
   <body>
-	<div class="main">
-		<div class="container">
+    
+    
+	<div class="container">
+
+		<!-- Блок с логотипом и формой захвата (заказать звонок) -->
+		<div class="row">
+			<div class="panel-nav">
+	    		<div class="col-lg-1 col-lg-offset-5">
+	    			<img src="img/logo_compani.png" alt="" class="panel-nav__logo">
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- ******************** -->
+
+	    <div class="main">
+
+			<!-- Блок с товарами -->
+		<div class="content">
 			<div class="row">
-
-				<div class="col-lg-4 col-xs-12">
-					<div class="logo">
-						<img class="logo__img" src="img/logo-avto.png" alt="logo-avto">
-						<p class="logo__caption">Автозайм<br><span>денежные займы под залог ПТС</span></p>
+				<div class="col-lg-4">
+					<div class="content__container">
+						<div class="content__container_img"></div>
+						<p class="content__container_caption">YJS i8</p>
+						<button type="button" class="btn btn-warning btn-lg buy_btn">Сделать заказ</button>
+						<div class="content__container_text" data-toggle="modal" data-target="#myModal">Подробнее</div>
 					</div>
 				</div>
-				
-
-				<div class="col-lg-2 col-lg-offset-3 col-xs-12">
-					<div class="contact">
-						<div class="contact__button">
-							<span class="contact__text">Заказать звонок</span>
-						</div>
+				<div class="col-lg-4">
+					<div class="content__container">
+						
 					</div>
 				</div>
+				<div class="col-lg-4">
+					<div class="content__container">
+						
+					</div>
+				</div>
+			</div>
 
-				<div class="col-lg-3 col-xs-12">
-					<div class="phone"><p class="phone__number">8 (843) 212-11-07</p></div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="content__container">
+						
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="content__container">
+						
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="content__container">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="content__container">
+						
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="content__container">
+						
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="content__container">
+						
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="caption">
-			<span class="caption__text">
-				Получите денежный займ под залог ПТС за 15 минут<br>
-				в размере до 90% от стоимости автомобиля
-			</span>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4">
+					<div class="content__container">
+						
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- *************** -->
+
+		<!-- Блок с контактами -->
+		<div class="row">
+			<div class="contact">
+				<div class="col-lg-5">
+					<img src="img/logo_compani.png" alt="" class="panel-nav__logo logo">
+					<p class="contact__text">Адрес: г. Москва, ул. Ивана Франко, д. 8, оф. 201<br>Телефон: +7 (968) 419-19-62, +7 (925) 877-01-77<br>ИНН 615490572609<br>
+					ОГРН-317619600043571, ИП Фролов А.В.</p>
+				</div>
+
+				<div class="col-lg-6 col-lg-offset-1 map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b76cf34b591df68f97ae89ed4d970a4d8c4fccf9b043de175a2e3bb39e1b5da&amp;width=100%&amp;height=429&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
+			</div>
+		</div>
+		<!-- *************** -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel"></h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="img-content">
+			     		<img class="img-content__font" src="img/east_go_i8.jpg" alt="">
+		     	</div>
+		     	<div class="content">
+		     		<p class="content__text"><span class="model">YJS i8</span> - переходи на электротранспорт будущего по цене  обычного самоката! <br><br><span class="haracteristicks"><b>Характеристики:</b><br><br>Размер колеса: 6.5 дюймов<br>Мощность мотора: 500 Вт <br>Максимальная нагрузка: 100 кг<br>Максимальная скорость: 20 км/ч <br>Время заряда: 2-3 часа<br>Пробег на одном заряде: 15-20 км<br>Аккумулятор: LG 29.4 V/ 5.2aH<br>Вес: 8.5 кг<br>Светодиодные фонари: есть<br></span></p>	
+		     	</div>
+				<div class="popup-link">
+					<a type="button" class="btn-default" data-dismiss="modal" href="img/i-8-2.jpg"><img class="img" src="img/i-8-2.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-1.jpg"><img class="img" src="img/i-8-1.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-3.jpg"><img class="img" src="img/i-8-3.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-4.jpg"><img class="img" src="img/i-8-4.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-5.jpg"><img class="img" src="img/i-8-5.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-6.jpg"><img class="img" src="img/i-8-6.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-7.jpg"><img class="img" src="img/i-8-7.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-8.jpg"><img class="img" src="img/i-8-8.jpg" alt=""></a>
+					<a class="img-hidden" href="img/i-8-9.jpg"><img class="img" src="img/i-8-9.jpg" alt=""></a>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+		$(function() {
+			$('.popup-link').magnificPopup({
+				delegate: 'a',
+		        type: 'image',
+		        gallery: {
+		           enabled: true,
+		        },
+		        zoom: {
+			        enabled: true,
+			        duration: 300
+				}
+			});
+		});
+	</script>
+    
   </body>
 </html>
