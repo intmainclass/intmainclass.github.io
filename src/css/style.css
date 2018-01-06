@@ -1,0 +1,406 @@
+@font-face {
+  font-family: "GothaProReg";
+  src: url("../fonts/GothaProReg.otf");
+  
+  /* Гарнитура шрифта */
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: "GothaProLig";
+  src: url("../fonts/GothaProLig.otf");
+  
+  /* Гарнитура шрифта */
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: "GothaProMed";
+  src: url("../fonts/GothaProMed.otf");
+  
+  /* Гарнитура шрифта */
+  /* Путь к файлу со шрифтом */
+}
+body,
+html {
+  overflow-x: hidden;
+}
+.first-screen {
+  z-index: 0;
+  background: url("../img/1screen/bg.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 802px;
+}
+.first-screen .top-nav {
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -15px;
+}
+.first-screen .top-nav__menu {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+.first-screen .top-nav__menu_name {
+  margin-right: 15px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+}
+.first-screen .navbar-default {
+  background-color: #11ffee00;
+  border-color: #11ffee00;
+}
+.first-screen .navbar-default .navbar-nav > li > a {
+  color: #555555;
+  padding-left: 0px;
+}
+.first-screen .navbar-collapse.in {
+  -webkit-transition: opacity 1500ms ease-in;
+  transition: opacity 1500ms ease-in;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.first-screen .navbar-collapse.in a {
+  text-align: center;
+  -webkit-transition: opacity 1500ms ease-in;
+  transition: opacity 1500ms ease-in;
+}
+.first-screen .caption {
+  margin-top: 100px;
+}
+.first-screen .caption__text {
+  color: #333333;
+  font-size: 39.94px;
+  font-weight: 400;
+  line-height: 70px;
+  text-align: left;
+}
+.first-screen .caption__text span {
+  color: #ff3366;
+  font-size: 59.91px;
+  font-weight: 500;
+  line-height: 70px;
+  text-align: left;
+  -webkit-transform: scaleX(1.0021);
+          transform: scaleX(1.0021);
+}
+.first-screen .about__text {
+  color: #666666;
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justify;
+}
+.first-screen .button-site__btn,
+.first-screen .button-site__btn:active,
+.first-screen .button-site__btn:focus {
+  outline: none;
+  border: 0;
+}
+.first-screen .button-site__btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 45px;
+  border-radius: 22px;
+  background-color: #ff3366;
+  border: 0;
+  outline: none;
+}
+.first-screen .button-site p {
+  line-height: 45px;
+  z-index: 0;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.second-screen .caption {
+  margin-top: 85px;
+}
+.second-screen .caption__text {
+  display: block;
+  font-family: "GothaProReg";
+  color: #333333;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.second-screen .article-first {
+  margin-top: 65px;
+}
+.second-screen .article-first__caption {
+  font-family: "GothaProReg";
+  color: #333333;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+.second-screen .article-first__about {
+  font-family: "GothaProLig";
+  margin-top: 7px;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+}
+.second-screen .article-first img {
+  display: block;
+  margin-top: 76px;
+}
+.second-screen .article-second {
+  margin-top: 65px;
+}
+.second-screen .article-second__caption {
+  font-family: "GothaProReg";
+  display: block;
+  margin-top: 69px;
+  color: #333333;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+}
+.second-screen .article-second__about {
+  font-family: "GothaProLig";
+  display: block;
+  margin-top: 7px;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+}
+.second-screen .article-second img {
+  margin-left: 60px;
+}
+.second-screen .button-site__btn,
+.second-screen .button-site__btn:active,
+.second-screen .button-site__btn:focus {
+  outline: none;
+  border: 0;
+}
+.second-screen .button-site {
+  margin-top: 40px;
+  left: 50%;
+  margin-left: -100px;
+  margin-bottom: 100px;
+}
+.second-screen .button-site__btn {
+  width: 200px;
+  height: 45px;
+  border-radius: 22px;
+  background-color: #ff3366;
+  border: 0;
+  outline: none;
+}
+.second-screen .button-site p {
+  line-height: 45px;
+  z-index: 0;
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.third-screen .line {
+  margin-top: -12px;
+}
+.third-screen .line__img {
+  width: 100%;
+}
+.third-screen .caption {
+  margin-top: 44px;
+}
+.third-screen .caption__text {
+  text-align: center;
+  color: #333333;
+  font-family: "GothaProReg";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 70px;
+}
+.third-screen .girl {
+  margin-top: 42px;
+  margin-bottom: 100px;
+}
+.third-screen .girl__caption {
+  color: #333333;
+  font-family: "GothaProReg";
+  /* Text style for "Bridget 49" */
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 15px;
+}
+.third-screen .girl__text {
+  color: #333333;
+  font-family: "GothaProLig";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+}
+.fourth-screen {
+  background: url("../img/4screen/bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.fourth-screen .caption-l1__text {
+  margin-top: 135px;
+  color: #ffffff;
+  font-family: "GothaProReg";
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.fourth-screen .caption-l2__text {
+  color: #ffffff;
+  font-family: "GothaProMed";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  text-align: center;
+}
+.fourth-screen .text {
+  margin-top: 35px;
+}
+.fourth-screen .text p {
+  display: block;
+  margin-top: 25px;
+  color: #ffffff;
+  font-family: "GothaProLig";
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  margin-right: 10px;
+}
+.fourth-screen .text p:before {
+  content: '• ';
+}
+.fourth-screen .button-site__btn,
+.fourth-screen .button-site__btn:active,
+.fourth-screen .button-site__btn:focus {
+  outline: none;
+  border: 0;
+}
+.fourth-screen .button-site {
+  margin-top: 40px;
+  left: 50%;
+  margin-left: -110px;
+  margin-bottom: 135px;
+}
+.fourth-screen .button-site__btn {
+  width: 200px;
+  height: 45px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  border: 0;
+  outline: none;
+}
+.fourth-screen .button-site p {
+  line-height: 45px;
+  z-index: 0;
+  color: #ff3366;
+  font-family: "Helvetica";
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* 2 экран */
+  .second-screen .caption .caption__text {
+    font-size: 35px;
+  }
+  .second-screen .article-second__caption {
+    font-size: 23px;
+  }
+  .second-screen .article-first__caption {
+    font-size: 23px;
+  }
+  .second-screen .article-second img {
+    margin-left: 0px;
+  }
+  /* - 2 экран */
+  /* 3 экран */
+  .third-screen .girl__img {
+    width: 100%;
+    height: 100%;
+  }
+  /* - 3 экран */
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* 2 экран */
+  .second-screen .caption .caption__text {
+    font-size: 28px;
+  }
+  .second-screen .article-second__caption {
+    font-size: 23px;
+    margin-top: 0px;
+  }
+  .second-screen .article-first__caption {
+    font-size: 23px;
+  }
+  .second-screen .article-first img {
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+  .second-screen .article-second img {
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+  /* - 2 экран */
+  /* 3 экран */
+  .third-screen .girl {
+    margin-left: 5%;
+  }
+  .third-screen .girl__img {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  /* - 3 экран */
+}
+@media screen and (max-width: 767px) {
+  /* 2 экран */
+  .second-screen .caption .caption__text {
+    font-size: 20px;
+  }
+  .second-screen .article-second__caption {
+    font-size: 17px;
+    margin-top: 0px;
+    font-weight: 700;
+  }
+  .second-screen .article-first__caption {
+    font-size: 17px;
+    margin-top: 0px;
+    font-weight: 700;
+  }
+  .second-screen .article-first img {
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+  }
+  .second-screen .article-second img {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+  }
+  /* - 2 экран */
+  /* 3 экран */
+  .third-screen .girl__img {
+    width: 25%;
+    height: 25%;
+    margin-left: 38%;
+    margin-top: 20px;
+  }
+  /* - 3 экран */
+}
