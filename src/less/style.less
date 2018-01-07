@@ -14,6 +14,7 @@
  }
 
 body, html{
+	
 	overflow-x: hidden;
 }
 
@@ -25,90 +26,113 @@ body, html{
 	width: 100vw;
 	height: 802px;
 
-	.top-nav{
-		z-index:2;
-		position: fixed;
-		width: 100vw;
-		height: 100vh;
-		margin-left: -15px;
-  		&__menu{
-  			margin-top: 30px;
-			list-style: none;
-			padding: 0;
+	.girll{
+		&__foto{
+			width: 120%;
+			height: 120%;
+			margin-top: -60px;
+			margin-left: -130px;
+		}
+	}
 
-			&_name{
-				margin-right: 15px;
-				text-decoration: none;
-				text-align: left;
-				font-size: 13px;
-				font-weight: 400;
-			}
-  		}
-
-  	}
-
-  	.navbar-default{
-  		background-color: #11ffee00;
+	nav{
+		z-index: 3;
+		background-color: #11ffee00;
   		border-color: #11ffee00;
-  	}
+		width: 100vw;
+		position: fixed;
+		text-align:center;
+	}
 
-  	.navbar-default .navbar-nav> li >a {
-    	color:  #555555;
-    	padding-left: 0px;
+	.top-nav{
+		margin-top: 35px;
+
+		&__name{
+			color: #555555;
+			font-family: "GothaProReg";
+			font-size: 12px;
+			font-weight: 400;
+		}
+
 	}
 
 	.navbar-collapse.in{
-		transition: opacity 1500ms ease-in;
-		background-color: rgba(0,0,0, 0.08);
-
+		background-color: rgba(0,0,0, 0.5);
+		width: 100vw;
+		margin-top: -35px;
+		height: 100vh;
+		
 		a{
-			text-align: center;
-			transition: opacity 1500ms ease-in;
+			color: #FFFFFF;
 		}
 	}
 
-	.caption{
-		margin-top: 100px;
-		&__text{
-			color:  #333333;
-			font-size: 39.94px;
+	.captions{
+		margin-top: 158px;
+
+		&__text1{
+			color: #333333;
+			font-family: "GothaProReg";
+			font-size: 40px;
 			font-weight: 400;
-			line-height: 70px;
-			text-align: left;
-
-			span{
-				color:  #ff3366;
-				font-size: 59.91px;
-				font-weight: 500;
-				line-height: 70px;
-				text-align: left;
-				transform: scaleX(1.0021);
-			}
 		}
-	}
 
-	.about{
-		&__text{
+		&__text2{
+			margin-top: 20px;
+			font-family: "GothaProReg";
+			color: #ff3366;
+			font-size: 60px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+
+		&__text3{
+			margin-top: 10px;
+			margin-left: -10px;
+			display: block;
 			color: #666666;
-			font-family: "Gotham Pro";
+			font-family: "GothaProReg";
 			font-size: 18px;
 			font-weight: 400;
-			line-height: 30px;
+			text-align:justify;
+		}
 
-			text-align: justify;
+		&__text4{
+				display: block;
+
+				span{
+					color: #ff3366;
+					font-family: "GothaProReg";
+					font-weight: 400;
+				}
+
+				margin-top: 40px;
+				
+				color: #444444;
+				font-family: "GothaProReg";
+				font-size: 44px;
+				font-weight: 400;
+
+				.kov2{
+					display: block;
+					padding-left: 100px;
+				}
+
 		}
 	}
 
 	.button-site__btn, 
-			.button-site__btn:active, 
-			.button-site__btn:focus {
-			    outline: none;
-			    border: 0;
-			}
+		.button-site__btn:active, 
+		.button-site__btn:focus {
+		    outline: none;
+		    border: 0;
+	}
 	
 	.button-site{
+		margin-top: 30px;
+		margin-left: -20px;
+		
 		&__btn{
-			margin-top: 20px;
 			width: 200px;
 			height: 45px;
 			border-radius: 22px;
@@ -121,15 +145,16 @@ body, html{
 			line-height: 45px;
 			z-index: 0;
 			color: #ffffff;
-			font-family: Helvetica;
+			font-family: "Helvetica";
 			font-size: 15px;
-			font-weight: 400;
+			font-weight: 200;
 			text-transform: uppercase;
 		}
 	}
 }
 
 .second-screen{
+
 	.caption{
 		margin-top: 85px;
 		&__text{
@@ -356,9 +381,147 @@ body, html{
 	}
 }
 
+.fifth-screen{
+	
+	.caption-l1{
+		margin-top: 85px;
+		&__text{
+			color: #333333;
+			font-family: "GothaProReg";
+			font-size: 40px;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+
+	/* стили блока аккордеон */
+.accordion {
+  width:100%;
+  max-width: 600px; 
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+}
+/* секции аккордеона */
+.accordion .accordion_item {
+	
+  margin-bottom:1px;
+  position:relative;
+
+}
+/* заголовки панелей аккордеона */
+.accordion .title_block {
+  color: #444444;
+	font-family: "GothaProReg";
+	font-size: 15px;
+	font-weight: 400;
+
+	padding:10px 50px 10px 50px;
+
+	border-radius: 25px;
+	border: 1px solid #f6ecef;
+}
+
+/* переключатель панелей, положение вниз */
+.accordion .title_block:before {
+  content:'+';
+  height:8px;
+  width:8px;
+  display:block;
+  position:absolute;
+
+  right:20px;
+  top: 25%;
+	font-family: "GothaProReg";
+	font-weight: 400;
+	color: #ff3366;
+
+  font-size: 25px;
+}
+/* активный переключатель, положение вверх */
+.accordion .active_block .title_block:before {
+  border-radius: 25px;
+  display:block;
+  content:"-";
+  top:8px;
+
+  font-size: 25px;
+}
+ 
+/* заголовок активного блока  */
+.accordion .active_block .title_block {
+
+  	background: #ffffff;
+	z-index:2;
+
+	color: #444444;
+	font-family: "GothaProReg";
+	font-size: 15px;
+	font-weight: 400;
+
+	padding:10px 50px 10px 50px;
+
+	border-radius: 25px;
+
+	border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+	border: 1px solid #f6ecef;
+}
+
+
+
+/* блоки с содержанием */
+.accordion .info {
+  z-index:1;
+  display:none;
+  padding:20px 15px;
+  overflow: hidden;
+  margin-top: -10px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background:#f7f7f7;
+
+
+	color: #555555;
+	font-family: "GothaProLig";
+	font-size: 13px;
+	font-weight: 300;
+}
+/* параграф внутри блоков с содержанием */
+.accordion .info_item {
+  margin-bottom:10px
+}
+/* картинки внутри аккордеона */
+.accordion .info img {
+    height: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* полноразмерная картинка */
+.large-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* миниатюра слева */
+.img-left {
+    width: 25%;
+    float:left;
+    margin:5px 15px 5px 0;
+}
+/* миниатюра справа */
+.img-right {
+    width: 25%;
+    float:right;
+    margin:5px 0 5px 15px;
+}
+}
+
 .sixth-screen{
 	background: url("../img/6screen/bg.jpg") no-repeat center center;
 	background-size: cover;
+
+	.my_form{
+		max-width: 825px;
+	}
 
 	.caption-l1{
 
@@ -374,10 +537,71 @@ body, html{
 		}
 
 	}
+
+	label {
+		color: #555555;
+		font-family: "GothaProMed";
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	.button-site__btn, 
+			.button-site__btn:active, 
+			.button-site__btn:focus {
+			    outline: none;
+			    border: 0;
+			}
+	
+	.button-site{
+		margin-top: 40px;
+		left: 50%;
+		margin-left: -110px;
+		margin-bottom: 135px;
+		&__btn{
+			width: 200px;
+			height: 45px;
+			border-radius: 22px;
+			background-color: #ff3366;
+			border: 0;
+			outline: none;
+		}
+
+		p{
+			line-height: 45px;
+			z-index: 0;
+			color: #ffffff;
+			font-family: "Helvetica";
+			font-size: 15px;
+			font-weight: 200;
+			text-transform: uppercase;
+		}
+	}
 }
 
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
+
+	.first-screen .girl img{
+		width:110%;
+		height: 110%;
+	}
+
+	.first-screen .captions__text1{
+		font-size: 30px;
+	}
+
+	.first-screen .captions__text2{
+		margin-top: 20px;
+		font-size: 32px;
+	}
+	.first-screen .captions__text3{
+		margin-top: 22px;
+		font-size: 20px;
+	}
+	.first-screen .captions__text4{
+		margin-top: 120px;
+		font-size: 30px;
+	}
 
 	/* 2 экран */
 
@@ -410,6 +634,26 @@ body, html{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
+	.first-screen .button-site__btn{
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+	}
+
+	.first-screen .captions__text1{
+		text-align: center;
+	}
+
+	.first-screen .captions__text2{
+		text-align: center;
+	}
+	.first-screen .captions__text3{
+		text-align: center;
+	}
+	.first-screen .captions__text4{
+		margin-top: 120px;
+		text-align: center;
+	}
 
 	/* 2 экран */
 
@@ -451,9 +695,44 @@ body, html{
 	}
 
 	/* - 3 экран */
+
+	.sixth-screen .my_form{
+		max-width: 420px;
+	}
 }
 
 @media screen and (max-width: 767px){
+
+	.first-screen .button-site__btn{
+		position: absolute;
+		left: 50%;
+		margin-left: -80px;
+	}
+
+	.first-screen .captions__text1{
+		text-align: center;
+		font-size: 23px;
+	}
+
+	.first-screen .captions__text2{
+		margin-top: 70px;
+		text-align: center;
+		font-size: 30px;
+	}
+	.first-screen .captions__text3{
+		margin-top: 40px;
+		text-align: center;
+		font-size: 20px;
+	}
+	.first-screen .captions__text4{
+		margin-top: 120px;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.sixth-screen .my_form{
+		max-width: 420px;
+	}
 
 	/* 2 экран */
 
@@ -503,3 +782,20 @@ body, html{
 
 }
 
+footer{
+	text-align: center;
+
+	width: 100%;
+	background-color: #f6f6f6;
+
+	p{
+		color: #888888;
+		font-family: "GothaProReg";
+		font-size: 12px;
+		font-weight: 300;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
