@@ -54,7 +54,7 @@ html {
   font-weight: 400;
 }
 .first-screen .navbar-collapse.in {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100vw;
   margin-top: -35px;
   height: 100vh;
