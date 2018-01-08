@@ -95,7 +95,7 @@
     <!-- Второй экран -->
     <div class="second-screen" id="2">
     
-		<div class="container">
+		<div class="container ">
 			
 			<!-- Заголовок первого уровня для второго экрана -->
 			<div class="row caption">
@@ -106,12 +106,12 @@
 			<!-- ************ -->
 			
 			<!-- Статьи -->
-			<div class="row">
+			<div class="row second-screen-position">
 
 				<!-- Статья в случае, когда идет сначала текс, потом картинка -->
 				<div class="col-lg-6 article-first
 							col-md-6
-							col-sm-8
+							col-sm-12 
 							col-xs-12">
 					<p class="article-first__caption">
 						No Experience Needed <br>
@@ -126,9 +126,9 @@
 				<!-- ************ -->
 
 				<!-- Статья в случае, когда идет сначала картинка, потом текст -->
-				<div class="col-lg-5 col-lg-offset-1 article-second
-							col-md-5 col-md-offset-1
-							col-sm-8
+				<div class="col-lg-5  article-second
+							col-md-5 
+							col-sm-12 
 							col-xs-12">
 					
 					<img class="visible-lg visible-md" src="img/2screen/image2.jpg" alt="img">
@@ -498,6 +498,14 @@
               ".info").stop(!0, !0).slideUp())
       })
     }(jQuery);
+   </script>
+
+   <script type="text/javascript">
+   		$("body").on('click', '[href*="#"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
    </script>
 
   </body>

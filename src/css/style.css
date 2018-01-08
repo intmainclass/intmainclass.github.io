@@ -38,29 +38,34 @@ html {
 }
 .first-screen nav {
   z-index: 3;
-  background-color: #11ffee00;
-  border-color: #11ffee00;
+  background-color: #ffffff;
   width: 100vw;
   position: fixed;
   text-align: center;
 }
 .first-screen .top-nav {
-  margin-top: 35px;
+  margin-top: 10px;
 }
 .first-screen .top-nav__name {
   color: #555555;
   font-family: "GothaProReg";
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
 }
 .first-screen .navbar-collapse.in {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
   width: 100vw;
   margin-top: -35px;
   height: 100vh;
 }
 .first-screen .navbar-collapse.in a {
-  color: #FFFFFF;
+  display: block;
+  color: #555555;
+  font-family: "GothaProReg";
+  font-size: 15px;
+}
+.first-screen .navbar-collapse.in a:hover {
+  background-color: rgba(0, 0, 0, 0.01);
 }
 .first-screen .captions {
   margin-top: 158px;
@@ -143,6 +148,9 @@ html {
   font-size: 40px;
   font-weight: 400;
   text-align: center;
+}
+.second-screen .second-screen-position {
+  margin-left: 60px;
 }
 .second-screen .article-first {
   margin-top: 65px;
@@ -351,7 +359,7 @@ html {
 }
 .fifth-screen .accordion {
   width: 100%;
-  max-width: 600px;
+  max-width: 825px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -511,17 +519,23 @@ html {
     font-size: 30px;
   }
   /* 2 экран */
+  .article-second {
+    margin-left: 30px;
+  }
+  .second-screen-position {
+    margin-left: 20px;
+  }
   .second-screen .caption .caption__text {
     font-size: 35px;
   }
   .second-screen .article-second__caption {
-    font-size: 23px;
+    font-size: 21px;
   }
   .second-screen .article-first__caption {
-    font-size: 23px;
+    font-size: 21px;
   }
   .second-screen .article-second img {
-    margin-left: 0px;
+    margin-left: -20px;
   }
   /* - 2 экран */
   /* 3 экран */
@@ -532,6 +546,9 @@ html {
   /* - 3 экран */
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .top-nav .top-nav__name {
+    font-size: 12px;
+  }
   .first-screen .button-site__btn {
     position: absolute;
     left: 50%;
@@ -561,13 +578,22 @@ html {
   .second-screen .article-first__caption {
     font-size: 23px;
   }
+  .second-screen .article-second__about {
+    margin-right: 30px;
+  }
+  .second-screen .article-first__about {
+    margin-right: 30px;
+  }
   .second-screen .article-first img {
     margin-top: 20px;
-    margin-left: 300px;
+    margin-left: 15%;
   }
   .second-screen .article-second img {
     margin-top: 20px;
-    margin-left: 300px;
+    margin-left: 15%;
+  }
+  .second-screen .button-site__btn {
+    margin-left: -8%;
   }
   /* - 2 экран */
   /* 3 экран */
@@ -614,6 +640,12 @@ html {
     max-width: 420px;
   }
   /* 2 экран */
+  .second-screen .second-screen-position {
+    margin-left: -15px;
+  }
+  .second-screen .button-site__btn {
+    margin-left: -2%;
+  }
   .second-screen .caption .caption__text {
     font-size: 20px;
   }
@@ -643,9 +675,9 @@ html {
   /* - 2 экран */
   /* 3 экран */
   .third-screen .girl__img {
-    width: 25%;
-    height: 25%;
-    margin-left: 38%;
+    width: 55%;
+    height: 55%;
+    margin-left: 23%;
     margin-top: 20px;
   }
   /* - 3 экран */
