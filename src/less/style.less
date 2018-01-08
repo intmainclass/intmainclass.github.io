@@ -26,17 +26,107 @@ body, html{
 	width: 100vw;
 	height: 802px;
 
-	.girll{
-		&__foto{
-			width: 120%;
-			height: 120%;
-			margin-top: -60px;
-			margin-left: -130px;
+   .captions__text4{
+		display: block;
+
+
+		span{
+			color: #ff3366;
+			font-family: "GothaProReg";
+			font-weight: 400;
 		}
+		color: #444444;
+		font-family: "GothaProReg";
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.ss .carousel1{
+		width: 600px;
+	}
+
+	.carousel-wrapper {
+	   margin: 10px 30px; /* отступы для стрелок */
+	   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+	   position:relative;
+	}
+
+	.carousel-items {
+	   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+	   position: relative; /* позиционируем блок относительно основной области карусели */
+	}
+
+	.carousel-block {
+		margin-left: 40px;
+	   float: left; /* выстраиваем все элементы карусели в ряд */
+	   width: 500px; /* задаём ширину каждого элемента */
+	   padding: 50px 50px 50px 0px; /* делаем оступы, чтобы элементы не сливались */
+	}
+
+	.girll__ramka1{
+		position:absolute;
+		margin-top: 50px;
+		margin-left: 50px;
+		width: 450px;
+		height: 450px;
+		z-index:2;
+		background:url("../img/1screen/bg.png") no-repeat center center;
+		background-size: cover;
+	}
+
+	.carousel-indicators{
+		position: absolute;
+		top: 340px;
+	}
+
+	.girll__ramka2{
+		margin-left: -120px;
+		margin-top: -80px;
+		width: 550px;
+		height: 550px;
+		z-index:1;
+		background:url("../img/1screen/bg-1.png") no-repeat center center;
+		background-size: cover;
+	}
+
+	h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+	}
+	.item{ 
+
+	    text-align: center;
+	    height: 300px !important;
+
+	    img{
+			width: 350px;
+	    	height: 350px;
+	    	border-radius: 50px;  
+	    }
+
+	}
+	.carousel{
+		z-index:2;
+		width: 350px;
+	    height: 350px;
+	    padding-top: 50px;
+	    margin-left: 50px;
+	}
+
+	.carousel-inner{
+		width: 350px;
+	    height: 350px;
+	}
+
+	.carousel-control{
+		opacity: 0;
 	}
 
 	nav{
-		z-index: 3;
+		z-index: 4;
 		background-color: #ffffff;
 		width: 100vw;
 		position: fixed;
@@ -103,28 +193,6 @@ body, html{
 			text-align:justify;
 		}
 
-		&__text4{
-				display: block;
-
-				span{
-					color: #ff3366;
-					font-family: "GothaProReg";
-					font-weight: 400;
-				}
-
-				margin-top: 40px;
-				
-				color: #444444;
-				font-family: "GothaProReg";
-				font-size: 44px;
-				font-weight: 400;
-
-				.kov2{
-					display: block;
-					padding-left: 100px;
-				}
-
-		}
 	}
 
 	.button-site__btn, 
@@ -241,7 +309,7 @@ body, html{
 	.button-site{
 		margin-top: 40px;
 		left: 50%;
-		margin-left: -100px;
+		margin-left: -155px;
 		margin-bottom: 100px;
 		&__btn{
 			width: 200px;
@@ -591,10 +659,50 @@ body, html{
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
 
-	.first-screen .girl img{
-		width:110%;
-		height: 110%;
+	.first-screen{
+		.ss{
+			margin-top: -100px;
+		}
 	}
+
+
+	.first-screen .carousel-indicators{
+		position: absolute;
+		top: 260px;
+	}
+
+	.first-screen .girll__ramka1{
+		position:absolute;
+		margin-top: 50px;
+		margin-left: 50px;
+		width: 350px;
+		height: 350px;
+	}
+
+	.first-screen .girll__ramka2{
+		width: 450px;
+		height: 450px;
+	}
+	
+	.first-screen .item{ 
+
+	    img{
+			width: 250px;
+	    	height: 250px;
+	    }
+
+	}
+	.first-screen .carousel{
+		z-index:2;
+		width: 250px;
+	    height: 250px;
+	}
+
+	.first-screen .carousel-inner{
+		width: 250px;
+	    height: 250px;
+	}
+
 
 	.first-screen .captions__text1{
 		font-size: 30px;
@@ -653,29 +761,78 @@ body, html{
 
 @media screen and (min-width: 768px) and (max-width: 991px){
 
+	.first-screen .girll__ramka1{
+		position:absolute;
+		margin-top: 25px;
+		margin-left: 25px;
+		width: 200px;
+		height: 200px;
+	}
+
+	.first-screen{
+		height: 730px;
+		.ss{
+			margin-top: -70px;
+		}
+	}
+
+	.first-screen .girll__ramka2{
+		margin-top: 0px;
+		width: 250px;
+		height: 250px;
+	}
+	
+	.first-screen .item{ 
+
+
+	    img{
+			width: 150px;
+	    	height: 150px;
+	    }
+
+	}
+	.first-screen .carousel{
+		z-index:2;
+		width: 150px;
+	    height: 150px;
+	}
+
+	.first-screen .carousel-indicators{
+		position: absolute;
+		top: 140px;
+		left: 50px;
+	}
+
+	.first-screen .carousel-inner{
+		margin-left: -25px;
+		margin-top: -25px;
+		width: 150px;
+	    height: 150px;
+	}
+
+
 	.top-nav .top-nav__name{
 		font-size: 12px;
 	}
 
 	.first-screen .button-site__btn{
 		position: absolute;
-		left: 50%;
-		margin-left: -100px;
+		margin-left: 10px;
 	}
 
 	.first-screen .captions__text1{
-		text-align: center;
+		font-size: 29px;
 	}
 
 	.first-screen .captions__text2{
-		text-align: center;
+		font-size: 29px;
 	}
 	.first-screen .captions__text3{
-		text-align: center;
+		font-size: 15px;
 	}
 	.first-screen .captions__text4{
 		margin-top: 120px;
-		text-align: center;
+		
 	}
 
 	/* 2 экран */
@@ -713,7 +870,7 @@ body, html{
 	}
 
 	.second-screen .button-site__btn{
-		margin-left: -8%;
+		margin-left: -2%;
 	}
 	/* - 2 экран */
 
@@ -739,6 +896,91 @@ body, html{
 
 @media screen and (max-width: 767px){
 
+	
+	.first-screen .girll__ramka1{
+		position:absolute;
+		margin-top: 25px;
+		margin-left: 25px;
+		width: 200px;
+		height: 200px;
+	}
+
+	.first-screen .girll__ramka2{
+		position: absolute;
+		left: 95%;
+		margin-top: 30px;
+		width: 250px;
+		height: 250px;
+	}
+
+	.first-screen{
+		height: 802px;
+		.girll{
+			margin-top: 40px;
+		}
+
+		.ss{
+			position: absolute;
+			left: 7%;
+			top:270px;
+			width: 200px;
+			margin-top: -30px;
+
+			.carousel{
+				width: 300px;
+			}
+			
+			.carousel-block{
+
+				width:300px;
+
+				p{
+					font-size: 20px;
+				}
+			}
+		}
+
+		.shadow{
+			width: 300px;
+		}
+
+		.carousel-wrapper{
+			margin-top: 40px;
+			margin-left: -10%;
+			width: 300px;
+			p{
+				font-size:22px;
+			}
+		}
+	}
+	
+	.first-screen .item{ 
+
+	    img{
+			width: 150px;
+	    	height: 150px;
+	    }
+
+	}
+	.first-screen .carousel{
+		z-index:2;
+		width: 150px;
+	    height: 150px;
+	}
+
+	.first-screen .carousel-indicators{
+		position: absolute;
+		top: 140px;
+		left: 50px;
+	}
+
+	.first-screen .carousel-inner{
+		margin-left: -25px;
+		margin-top: -25px;
+		width: 150px;
+	    height: 150px;
+	}
+
 	.first-screen .button-site__btn{
 		position: absolute;
 		left: 50%;
@@ -747,23 +989,24 @@ body, html{
 
 	.first-screen .captions__text1{
 		text-align: center;
-		font-size: 23px;
+		font-size: 18px;
+		margin-top: -80px;
 	}
 
 	.first-screen .captions__text2{
 		margin-top: 70px;
 		text-align: center;
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.first-screen .captions__text3{
-		margin-top: 40px;
+		margin-top: 0px;
 		text-align: center;
-		font-size: 20px;
+		font-size: 13px;
 	}
 	.first-screen .captions__text4{
 		margin-top: 120px;
 		text-align: center;
-		font-size: 15px;
+		font-size: 22px;
 	}
 
 	.sixth-screen .my_form{
@@ -777,7 +1020,7 @@ body, html{
 	}
 
 	.second-screen .button-site__btn{
-		margin-left: -2%;
+		margin-left: 7%;
 	}
 
 	.second-screen .caption .caption__text{
